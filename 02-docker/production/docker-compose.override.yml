@@ -1,0 +1,5 @@
+# Local override: Windows blocks binding port 80/443, publish Nginx on 8080 instead
+services:
+  nginx:
+    ports: !override
+      - "8080:80"
